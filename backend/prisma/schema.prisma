@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserStatus {
+  ONLINE
+  OFFLINE
+  BUSY
+}
+
+model User {
+  userId     Int        @id @default(autoincrement())
+  email      String     @unique
+  password   String
+  username   String     @unique
+  first_name String?
+  last_name  String?
+  created_at DateTime   @default(now())
+  updated_at DateTime   @updatedAt
+  status     UserStatus @default(ONLINE)
+  profilePic String?
+
+  @@index([username])
+}
