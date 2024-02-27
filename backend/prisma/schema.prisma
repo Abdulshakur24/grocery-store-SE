@@ -14,7 +14,7 @@ enum UserStatus {
 }
 
 model User {
-  userId     Int        @id @default(autoincrement())
+  userID     Int        @id @default(autoincrement())
   email      String     @unique
   password   String
   username   String     @unique
@@ -24,6 +24,60 @@ model User {
   updated_at DateTime   @updatedAt
   status     UserStatus @default(ONLINE)
   profilePic String?
+  Order      Order[]
+  Review     Review[]
 
   @@index([username])
+}
+
+model Category {
+  categoryID  Int       @id @default(autoincrement())
+  name        String
+  description String?
+  products    Product[]
+}
+
+model Product {
+  productID     Int           @id @default(autoincrement())
+  name          String
+  description   String
+  price         Float
+  categoryId    Int
+  imageUrl      String
+  stockQuantity Int
+  category      Category      @relation(fields: [categoryId], references: [categoryID])
+  orderDetails  OrderDetail[]
+  reviews       Review[]
+}
+
+model Order {
+  orderID         Int           @id @default(autoincrement())
+  userId          Int
+  orderDate       DateTime      @default(now())
+  shippingAddress String
+  totalAmount     Float
+  status          String
+  user            User          @relation(fields: [userId], references: [userID])
+  orderDetails    OrderDetail[]
+}
+
+model OrderDetail {
+  orderDetailID   Int     @id @default(autoincrement())
+  orderId         Int
+  productId       Int
+  quantity        Int
+  priceAtPurchase Float
+  order           Order   @relation(fields: [orderId], references: [orderID])
+  product         Product @relation(fields: [productId], references: [productID])
+}
+
+model Review {
+  reviewID   Int      @id @default(autoincrement())
+  productId  Int
+  userId     Int
+  rating     Int
+  comment    String?
+  reviewDate DateTime @default(now())
+  product    Product  @relation(fields: [productId], references: [productID])
+  user       User     @relation(fields: [userId], references: [userID])
 }
