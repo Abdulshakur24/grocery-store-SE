@@ -44,8 +44,8 @@ const SingleProduct = () => {
     <div>
       <div className="shop-single padding-tb aside-bg">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8 col-12">
+          <div className="row align-items-center">
+            <div className="col-12">
               <article>
                 <div className="product-details">
                   <div className="row align-items-center">
