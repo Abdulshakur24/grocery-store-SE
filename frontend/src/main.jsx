@@ -1,13 +1,58 @@
-import React from "react";
-import { BrowserRouter as ReactRouter } from "react-router-dom";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+import 'swiper/css';
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <ReactRouter>
-      <App />
-    </ReactRouter>
-  </React.StrictMode>
-);
+// bootstrap css
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+
+// fonts and icons
+import '././assets/css/icofont.min.css';
+import '././assets/css/animate.css';
+import '././assets/css/style.min.css';
+
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './home/Home.jsx';
+import Blog from './blog/Blog.jsx';
+import Shop from './shop/Shop.jsx';
+import Fruits from './fruits/Fruits.jsx';
+import Vegetables from './vegetables/Vegetables.jsx';
+import Juices from './juices/Juices.jsx';
+import Bread from './bread/Bread.jsx';
+import Cheese from './cheese/Cheese.jsx';
+import Smoothies from './smoothies/Smoothies.jsx';
+import SingleProduct from './fruits/SingleProduct.jsx';
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {path: "/", element: <Home />},
+      {path: "/blog", element: <Blog />},
+      {path: "/shop", element: <Shop />},
+      {path: "/fruits", element: <Fruits />},
+      {path: "fruits/:id", element: <SingleProduct/>},
+      {path: "/vegetables", element: <Vegetables />},
+      {path: "/juices", element: <Juices />},
+      {path: "/bread", element: <Bread />},
+      {path: "/cheese", element: <Cheese />},
+      {path: "/smoothies", element: <Smoothies />},
+  
+      
+
+    ]
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <RouterProvider router={router} />
+)
