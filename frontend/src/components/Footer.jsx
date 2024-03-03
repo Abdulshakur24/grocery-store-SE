@@ -64,9 +64,9 @@ function Footer() {
         <div className="row">
           <div className="col-md-8 col-sm-6 col-12">
             <p className="copyright-text">
-              Copyright © 2024 All Rights Reserved by
+              Copyright © 2024 All Rights Reserved by 
               <a href="#">
-                <span className="logo">Harvest.</span>
+                <span className="logo"> Harvest.</span>
               </a>
             </p>
           </div>
@@ -74,22 +74,17 @@ function Footer() {
             <ul className="social-icons">
               <li>
                 <a className="facebook" href="#">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a className="twitter" href="#">
-                  <i className="fa-brands fa-x-twitter"></i>
+                  <i className="icofont-facebook"></i>
                 </a>
               </li>
               <li>
                 <a className="instagram" href="#">
-                  <i className="fa-brands fa-instagram"></i>
+                  <i className="icofont-instagram"></i>
                 </a>
               </li>
               <li>
                 <a className="linkedin" href="#">
-                  <i className="fab fa-linkedin-in"></i>
+                  <i className="icofont-linkedin"></i>
                 </a>
               </li>
             </ul>
