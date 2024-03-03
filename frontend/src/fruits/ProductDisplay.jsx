@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const ProductDisplay = ({ item }) => {
-  const { name, id, price, ratingsCount, quantity, desc } = item;
+  const { name, id, price, ratingsCount, quantity, desc, img } = item;
   const [prequantity, setQuantity] = useState(quantity);
   const [coupon, setCoupon] = useState("");
 
@@ -14,6 +14,32 @@ const ProductDisplay = ({ item }) => {
   const handleIncrease = () => {
     setQuantity(prequantity + 1);
   };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const product = {
+        id:id,
+        img:img,
+        name:name,
+        price:price,
+        quantity:prequantity,
+        coupon:coupon
+    }
+    const existingCart =JSON.parse(localStorage.getItem('cart')) || [];
+
+    const existingProductIndex = existingCart.findIndex((item) => item.id ===id);
+
+    if(existingProductIndex !== -1) {
+        existingCart[existingProductIndex].quantity += prequantity;
+    } else{
+        existingCart.push(product);
+    }
+    // update local storage
+    localStorage.setItem('cart', JSON.stringify(existingCart));
+
+    //reset form fields
+    setQuantity(1);
+    setCoupon('');
+  }
 
   return (
     <div>
@@ -31,7 +57,7 @@ const ProductDisplay = ({ item }) => {
         <p>{desc}</p>
       </div>
       <div>
-        <form>
+        <form onSubmit={handleSubmit}>
           {/* Cart */}
           <div className="cart-plus-minus">
             <div className="dec qtybutton" onClick={handleDecrease}>
