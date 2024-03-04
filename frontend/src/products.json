@@ -1,7 +1,7 @@
 [
   {
     "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
-    "category": "Fruits",
+    "category": "fruits",
     "name": "Avocadoes",
     "price": "Ksh.150",
     "stock": 20,
@@ -14,7 +14,7 @@
   },
   {
     "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
-    "category": "Fruits",
+    "category": "fruits",
     "name": "Apples",
     "price": "Ksh.180",
     "stock": 19,
@@ -26,7 +26,7 @@
   },
   {
     "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
-    "category": "Fruits",
+    "category": "fruits",
     "name": "Oranges",
     "price": "Ksh.100",
     "stock": 20,
@@ -38,7 +38,7 @@
   },
   {
     "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
-    "category": "Fruits",
+    "category": "fruits",
     "name": "Bananas",
     "price": "Ksh.100",
     "stock": 10,
@@ -51,7 +51,7 @@
   },
   {
     "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
-    "category": "Fruits",
+    "category": "fruits",
     "name": "Mangoes",
     "price": "Ksh.139",
     "stock": 11,
@@ -63,7 +63,7 @@
   },
   {
     "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
-    "category": "Fruits",
+    "category": "fruits",
     "name": "Strawberries",
     "price": "Ksh.240",
     "stock": 19,
@@ -75,7 +75,7 @@
   },
   {
     "id": "9c0c13c2-54e4-4001-809b-afbd9d84037d",
-    "category": "Fruits",
+    "category": "fruits",
     "name": "Pineapple",
     "price": "Ksh.250",
     "stock": 1,
@@ -87,7 +87,7 @@
   },
   {
     "id": "c9d1f410-d28f-49d9-9b01-d759b5acbeea",
-    "category": "Fruits",
+    "category": "fruits",
     "name": "Watermelon",
     "price": "Ksh.200",
     "stock": 7,
@@ -99,7 +99,7 @@
   },
   {
     "id": "1564a06b-692f-4f2e-8413-9c8a1cc2da77",
-    "category": "Fruits",
+    "category": "fruits",
     "name": "Papayas",
     "price": "Ksh.75",
     "stock": 4,
@@ -111,7 +111,7 @@
   },
   {
     "id": "ac44095f-230e-4502-8816-dea3eaae8320",
-    "category": "Fruits",
+    "category": "fruits",
     "name": "Red Grapes",
     "price": "Ksh.412",
     "stock": 1,
@@ -123,7 +123,7 @@
   },
   {
     "id": "d0803f97-966f-4296-ad31-a7f70fc86fab",
-    "category": "Fruits",
+    "category": "fruits",
     "name": "Pixies",
     "price": "Ksh.120",
     "stock": 15,
@@ -135,7 +135,7 @@
   },
   {
     "id": "ff5bf372-7ed1-4904-aac5-7a2ce98e70ef",
-    "category": "Fruits",
+    "category": "fruits",
     "name": "Peaches",
     "price": "Ksh.799",
     "stock": 19,
@@ -147,7 +147,7 @@
   },
   {
     "id": "f6a5e6c0-5aec-4f10-84d7-bde9b6199045",
-    "category": "Fruits",
+    "category": "fruits",
     "name": "Green Grapes",
     "price": "Ksh.412",
     "stock": 7,
@@ -159,7 +159,7 @@
   },
   {
     "id": "8a5b4a9c-76ea-4fbb-9c70-9548de4eab01",
-    "category": "Vegetables",
+    "category": "vegetables",
     "name": "Tomatoes",
     "price": "Ksh.100",
     "stock": 6,
@@ -171,7 +171,7 @@
   },
   {
     "id": "b357e19b-4dd9-4fc7-b5c0-9ed5255464ba",
-    "category": "Vegetables",
+    "category": "vegetables",
     "name": "Spring Onions",
     "price": "Ksh.100",
     "stock": 46,
@@ -183,7 +183,7 @@
   },
   {
     "id": "e4220958-06d2-4d50-96fa-0163a563f43d",
-    "category": "Vegetables",
+    "category": "vegetables",
     "name": "Red Onions",
     "price": "Ksh.105",
     "stock": 41,
@@ -195,7 +195,7 @@
   },
   {
     "id": "ae69f0e4-559c-4b24-8032-80b63f9b5073",
-    "category": "Vegetables",
+    "category": "vegetables",
     "name": "White Onions",
     "price": "Ksh.120",
     "stock": 43,
@@ -207,7 +207,7 @@
   },
   {
     "id": "dbf7ab3f-b383-4d95-8ab7-f55fcf6fa5f2",
-    "category": "Vegetables",
+    "category": "vegetables",
     "name": "White Cabbage",
     "price": 150,
     "stock": 26,
@@ -218,7 +218,7 @@
   },
   {
     "id": "ed6a7ac3-7e67-4e3f-8461-bceb5178be42",
-    "category": "Vegetables",
+    "category": "vegetables",
     "name": "Sweet Potatoes",
     "price": 150,
     "stock": 5,
@@ -230,7 +230,7 @@
   },
   {
     "id": "fd52819a-cb78-4510-ad2f-c5bdd888ae78",
-    "category": "Vegetables",
+    "category": "vegetables",
     "name": "English Cucumbers",
     "price": "Ksh.80",
     "stock": 27,
@@ -242,7 +242,7 @@
   },
   {
     "id": "c667d3ff-41eb-4cf7-a433-819d959ea768",
-    "category": "Vegetables",
+    "category": "vegetables",
     "name": "Butternut Pumpkin",
     "price": "Ksh.100",
     "stock": 41,
@@ -254,7 +254,7 @@
   },
   {
     "id": "e1dbc7fe-be17-4e0f-9e2d-6ad5dbc102fc",
-    "category": "Vegetables",
+    "category": "vegetables",
     "name": "Coriander/Dhania",
     "price": "Ksh.15",
     "stock": 43,
@@ -265,7 +265,7 @@
   },
   {
     "id": "0298e695-1f9b-49b1-9961-8a8460f95b1c",
-    "category": "Vegetables",
+    "category": "vegetables",
     "name": "Green Peppers",
     "price": "Ksh.70",
     "stock": 1,
@@ -277,7 +277,7 @@
   },
   {
     "id": "3cfe9adc-c27f-4be4-a859-a5c98ce88a27",
-    "category": "Vegetables",
+    "category": "vegetables",
     "name": "Carrots",
     "price": "Ksh.150",
     "stock": 19,
@@ -289,7 +289,7 @@
   },
   {
     "id": "83ef9902-0224-48d3-ba7c-eeff3e678d13",
-    "category": "Juices",
+    "category": "juices",
     "name": "Pineapple Juice",
     "price": "Ksh.260",
     "stock": 5,
@@ -301,7 +301,7 @@
   },
   {
     "id": "7490b4c8-8242-4de5-b161-b8ac96ea0e0b",
-    "category": "Juices",
+    "category": "juices",
     "name": "Strawberry Juice",
     "price": "Ksh.280",
     "stock": 10,
@@ -313,7 +313,7 @@
   },
   {
     "id": "b1872b25-ba91-48ed-9468-1822df0637b9",
-    "category": "Juices",
+    "category": "juices",
     "name": "Passion Juice",
     "price": "Ksh.250",
     "stock": 6,
@@ -325,7 +325,7 @@
   },
   {
     "id": "ea028038-4e9d-42bf-b033-88aa5e6cc477",
-    "category": "Juices",
+    "category": "juices",
     "name": "Watermelon Juice",
     "price": "Ksh.240",
     "stock": 13,
@@ -337,7 +337,7 @@
   },
   {
     "id": "d48e0fcb-904c-499e-93a0-312d77e6dbf9",
-    "category": "Juices",
+    "category": "juices",
     "name": "Apple Juice",
     "price": "Ksh.260",
     "stock": 18,
@@ -349,7 +349,7 @@
   },
   {
     "id": "a9d89eac-7418-4bca-a484-c8238c356270",
-    "category": "Juices",
+    "category": "juices",
     "name": "Orange Juice",
     "price": "Ksh.250",
     "stock": 1,
@@ -361,7 +361,7 @@
   },
   {
     "id": "71dfc7f9-844b-4be7-816f-891a5cbaa0f1",
-    "category": "Juices",
+    "category": "juices",
     "name": "Grapefruit Juice",
     "price": "Ksh.300",
     "stock": 10,
@@ -371,184 +371,185 @@
     "shipping": 24,
     "quantity": 0
   },
-  
-{
-  "id": "625b4b60-611c-490c-ac0a-f3c2d2afd05c",
-  "category": "Bread",
-  "name": "Baguette",
-  "price": "Ksh.120",
-  "stock": 9,
-  "ratings": 5,
-  "ratingsCount": 15,
-  "img": "src/assets/images/bread/baguette.jpg",
-  "shipping": 6,
-  "quantity": 0
-},
-{
-  "id": "5960bf40-9603-4a39-9ff6-6cf9f1ce4815",
-  "category": "Bread",
-  "name": "Wholewheat Bread",
-  "price": "Ksh.300",
-  "stock": 14,
-  "ratings": 4,
-  "ratingsCount": 3,
-  "img": "src/assets/images/bread/wholewheat.jpg",
-  "shipping": 14,
-  "quantity": 0
-},
-{
-  "id": "5991add1-f4ba-4fb9-9b6b-ec59aa2dda60",
-  "category": "Bread",
-  "name": "Sourdough Bread",
-  "price": "Ksh.300",
-  "stock": 14,
-  "ratings": 4,
-  "ratingsCount": 32,
-  "img": "src/assets/images/bread/sourdough.jpg",
-  "shipping": 47,
-  "quantity": 0
-},
-{
-  "id": "5690e579-a943-4b42-9ffe-dfc65b71c560",
-  "category": "Bread",
-  "name": "Multigrain Bread",
-  "price": "Ksh.280",
-  "stock": 16,
-  "ratings": 4,
-  "ratingsCount": 30,
-  "img": "src/assets/images/bread/multigrain.jpg",
-  "shipping": 14,
-  "quantity": 0
-},
-{
-  "id": "be7a4d0a-c681-416c-ab8d-f9be28223f4e",
-  "category": "Bread",
-  "name": "Pita Bread",
-  "price": "Ksh.250",
-  "stock": 11,
-  "ratings": 5,
-  "ratingsCount": 22,
-  "img": "src/assets/images/bread/pita.jpg",
-  "shipping": 23,
-  "quantity": 0
-},
-{
-  "id": "b278e667-ca17-465c-b603-af1af4319b7b",
-  "category": "Bread",
-  "name": "White Bread",
-  "price": "Ksh.250",
-  "stock": 16,
-  "ratings": 5,
-  "ratingsCount": 51,
-  "img": "src/assets/images/bread/white.jpg",
-  "shipping": 30,
-  "quantity": 0
-},
-{
-  "id": "4a0090e7-b65d-4f6e-a42b-5603a3f51883",
-  "category": "Cheese",
-  "name": "Feta (250g)",
-  "price": "Ksh.500",
-  "stock": 7,
-  "ratings": 5,
-  "ratingsCount": 365,
-  "img": "src/assets/images/cheese/feta.jpg",
-  "shipping": 23,
-  "quantity": 0
-},
-{
-  "id": "0ac76ee7-53f1-45ba-b5ca-81ff6063bc1a",
-  "category": "Cheese",
-  "name": "Mozzarella (200g)",
-  "price": "Ksh.600",
-  "stock": 3,
-  "ratings": 4,
-  "ratingsCount": 465,
-  "img": "src/assets/images/cheese/mozzarella.jpg",
-  "shipping": 36,
-  "quantity": 0
-},
-{
-  "id": "1770549a-571b-4baf-bc58-7bae7a228dcb",
-  "category": "Cheese",
-  "name": "Gouda (200g)",
-  "price": "Ksh.670",
-  "stock": 10,
-  "ratings": 3,
-  "ratingsCount": 346,
-  "img": "src/assets/images/cheese/gouda.jpg",
-  "shipping": 42,
-  "quantity": 0
-},
-{
-  "id": "24b20ba6-9024-4b0a-b8a9-cf937521cede",
-  "category": "Cheese",
-  "name": "Manchego (100g)",
-  "price": "Ksh.1300",
-  "stock": 15,
-  "ratings": 5,
-  "ratingsCount": 234,
-  "img": "src/assets/images/cheese/manchego.jpg",
-  "shipping": 21,
-  "quantity": 0
-},
-{
-  "id": "a7231186-0316-4cc0-94bf-4f496a382346",
-  "category": "Cheese",
-  "name": "Brie (125g)",
-  "price": "Ksh.725",
-  "stock": 10,
-  "ratings": 4,
-  "ratingsCount": 241,
-  "img": "src/assets/images/cheese/brie.jpg",
-  "shipping": 15,
-  "quantity": 0
-},
-{
-  "id": "35ac57f9-870a-4299-aac8-e5d8d2716b31",
-  "category": "Cheese",
-  "name": "Camembert (200g)",
-  "price": "Ksh.755",
-  "stock": 18,
-  "ratings": 5,
-  "ratingsCount": 168,
-  "img": "src/assets/images/cheese/camembert.jpg",
-  "shipping": 14,
-  "quantity": 0
-},
-{
-  "id": "c50bebaf-2633-4674-aba2-25be34bfdbba",
-  "category": "Cheese",
-  "name": "Montagnolo (200g)",
-  "price": "Ksh.750",
-  "stock": 16,
-  "ratings": 3,
-  "ratingsCount": 311,
-  "img": "src/assets/images/cheese/montagnolo.jpg",
-  "shipping": 40,
-  "quantity": 0
-},{
-  "id": "1f56c0e5-4407-44bf-9225-90f592d2924a",
-  "category": "Cheese",
-  "name": "Parmesan (200g)",
-  "price": "Ksh.1700",
-  "stock": 8,
-  "ratings": 4,
-  "ratingsCount": 66,
-  "img": "src/assets/images/cheese/parmesan.jpg",
-  "shipping": 15,
-  "quantity": 0
-},
-{
-  "id": "4ead4708-68e8-4a93-b28e-5e99ccc4d75c",
-  "category": "Cheese",
-  "name": "Cheddar (100g)",
-  "price": "Ksh.416",
-  "stock": 14,
-  "ratings": 4,
-  "ratingsCount": 6,
-  "img": "src/assets/images/cheese/cheddar.jpg",
-  "shipping": 29,
-  "quantity": 0
-}
+
+  {
+    "id": "625b4b60-611c-490c-ac0a-f3c2d2afd05c",
+    "category": "bread",
+    "name": "Baguette",
+    "price": "Ksh.120",
+    "stock": 9,
+    "ratings": 5,
+    "ratingsCount": 15,
+    "img": "src/assets/images/bread/baguette.jpg",
+    "shipping": 6,
+    "quantity": 0
+  },
+  {
+    "id": "5960bf40-9603-4a39-9ff6-6cf9f1ce4815",
+    "category": "bread",
+    "name": "Wholewheat Bread",
+    "price": "Ksh.300",
+    "stock": 14,
+    "ratings": 4,
+    "ratingsCount": 3,
+    "img": "src/assets/images/bread/wholewheat.jpg",
+    "shipping": 14,
+    "quantity": 0
+  },
+  {
+    "id": "5991add1-f4ba-4fb9-9b6b-ec59aa2dda60",
+    "category": "bread",
+    "name": "Sourdough Bread",
+    "price": "Ksh.300",
+    "stock": 14,
+    "ratings": 4,
+    "ratingsCount": 32,
+    "img": "src/assets/images/bread/sourdough.jpg",
+    "shipping": 47,
+    "quantity": 0
+  },
+  {
+    "id": "5690e579-a943-4b42-9ffe-dfc65b71c560",
+    "category": "bread",
+    "name": "Multigrain Bread",
+    "price": "Ksh.280",
+    "stock": 16,
+    "ratings": 4,
+    "ratingsCount": 30,
+    "img": "src/assets/images/bread/multigrain.jpg",
+    "shipping": 14,
+    "quantity": 0
+  },
+  {
+    "id": "be7a4d0a-c681-416c-ab8d-f9be28223f4e",
+    "category": "bread",
+    "name": "Pita Bread",
+    "price": "Ksh.250",
+    "stock": 11,
+    "ratings": 5,
+    "ratingsCount": 22,
+    "img": "src/assets/images/bread/pita.jpg",
+    "shipping": 23,
+    "quantity": 0
+  },
+  {
+    "id": "b278e667-ca17-465c-b603-af1af4319b7b",
+    "category": "bread",
+    "name": "White Bread",
+    "price": "Ksh.250",
+    "stock": 16,
+    "ratings": 5,
+    "ratingsCount": 51,
+    "img": "src/assets/images/bread/white.jpg",
+    "shipping": 30,
+    "quantity": 0
+  },
+  {
+    "id": "4a0090e7-b65d-4f6e-a42b-5603a3f51883",
+    "category": "cheese",
+    "name": "Feta (250g)",
+    "price": "Ksh.500",
+    "stock": 7,
+    "ratings": 5,
+    "ratingsCount": 365,
+    "img": "src/assets/images/cheese/feta.jpg",
+    "shipping": 23,
+    "quantity": 0
+  },
+  {
+    "id": "0ac76ee7-53f1-45ba-b5ca-81ff6063bc1a",
+    "category": "cheese",
+    "name": "Mozzarella (200g)",
+    "price": "Ksh.600",
+    "stock": 3,
+    "ratings": 4,
+    "ratingsCount": 465,
+    "img": "src/assets/images/cheese/mozzarella.jpg",
+    "shipping": 36,
+    "quantity": 0
+  },
+  {
+    "id": "1770549a-571b-4baf-bc58-7bae7a228dcb",
+    "category": "cheese",
+    "name": "Gouda (200g)",
+    "price": "Ksh.670",
+    "stock": 10,
+    "ratings": 3,
+    "ratingsCount": 346,
+    "img": "src/assets/images/cheese/gouda.jpg",
+    "shipping": 42,
+    "quantity": 0
+  },
+  {
+    "id": "24b20ba6-9024-4b0a-b8a9-cf937521cede",
+    "category": "cheese",
+    "name": "Manchego (100g)",
+    "price": "Ksh.1300",
+    "stock": 15,
+    "ratings": 5,
+    "ratingsCount": 234,
+    "img": "src/assets/images/cheese/manchego.jpg",
+    "shipping": 21,
+    "quantity": 0
+  },
+  {
+    "id": "a7231186-0316-4cc0-94bf-4f496a382346",
+    "category": "cheese",
+    "name": "Brie (125g)",
+    "price": "Ksh.725",
+    "stock": 10,
+    "ratings": 4,
+    "ratingsCount": 241,
+    "img": "src/assets/images/cheese/brie.jpg",
+    "shipping": 15,
+    "quantity": 0
+  },
+  {
+    "id": "35ac57f9-870a-4299-aac8-e5d8d2716b31",
+    "category": "cheese",
+    "name": "Camembert (200g)",
+    "price": "Ksh.755",
+    "stock": 18,
+    "ratings": 5,
+    "ratingsCount": 168,
+    "img": "src/assets/images/cheese/camembert.jpg",
+    "shipping": 14,
+    "quantity": 0
+  },
+  {
+    "id": "c50bebaf-2633-4674-aba2-25be34bfdbba",
+    "category": "cheese",
+    "name": "Montagnolo (200g)",
+    "price": "Ksh.750",
+    "stock": 16,
+    "ratings": 3,
+    "ratingsCount": 311,
+    "img": "src/assets/images/cheese/montagnolo.jpg",
+    "shipping": 40,
+    "quantity": 0
+  },
+  {
+    "id": "1f56c0e5-4407-44bf-9225-90f592d2924a",
+    "category": "cheese",
+    "name": "Parmesan (200g)",
+    "price": "Ksh.1700",
+    "stock": 8,
+    "ratings": 4,
+    "ratingsCount": 66,
+    "img": "src/assets/images/cheese/parmesan.jpg",
+    "shipping": 15,
+    "quantity": 0
+  },
+  {
+    "id": "4ead4708-68e8-4a93-b28e-5e99ccc4d75c",
+    "category": "cheese",
+    "name": "Cheddar (100g)",
+    "price": "Ksh.416",
+    "stock": 14,
+    "ratings": 4,
+    "ratingsCount": 6,
+    "img": "src/assets/images/cheese/cheddar.jpg",
+    "shipping": 29,
+    "quantity": 0
+  }
 ]

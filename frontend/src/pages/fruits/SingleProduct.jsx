@@ -30,13 +30,13 @@ const SingleProduct = () => {
   const navigateTo = (offset) => {
     const newIndex = Math.max(
       0,
-      Math.min(currentIndex + offset, productsData.length - 1) // Use productsData for bounds
+      Math.min(currentIndex + offset, productsData.length - 1)
     );
 
     if (productsData[newIndex]) {
       const nextProductId = productsData[newIndex].id;
       setCurrentIndex(newIndex);
-      navigate(`/fruits/${nextProductId}`);
+      navigate(`/${productsData[newIndex].category}/${nextProductId}`);
     }
   };
 
