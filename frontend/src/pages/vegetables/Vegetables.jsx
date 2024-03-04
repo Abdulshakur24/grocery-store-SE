@@ -8,7 +8,7 @@ import PageHeader from "../../components/PageHeader";
 const Vegetables = () => {
   const [gridList, setGridList] = useState(true);
   const fruitsProducts = Data.filter(
-    (product) => product.category === "Vegetables"
+    (product) => product.category === "vegetables"
   );
   return (
     <div>

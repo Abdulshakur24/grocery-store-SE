@@ -9,7 +9,9 @@ import Pagination from "../../components/Pagination";
 
 const Juices = () => {
   const [gridList, setGridList] = useState(true);
-  const fruitsProducts = Data.filter(product => product.category === 'Juices');
+  const fruitsProducts = Data.filter(
+    (product) => product.category === "juices"
+  );
 
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
@@ -17,12 +19,15 @@ const Juices = () => {
 
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = fruitsProducts.slice(indexOfFirstProduct, indexOfLastProduct);
+  const currentProducts = fruitsProducts.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
 
   // Change the current page
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
-  }
+  };
   return (
     <div>
       <PageHeader
@@ -30,38 +35,45 @@ const Juices = () => {
         curPage="Juices"
         backgroundImage="src/assets/images/category/c-juices.jpg"
       />
-      <div className='shop-page padding-tb'>
-        <div className='container'>
-          <div className='row justify-content-center'>
-            <div className='col-lg-8 col-12'>
+      <div className="shop-page padding-tb">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-8 col-12">
               <article>
                 {/* Layout & Title */}
-                <div className='shop-title d-flex flex-wrap justify-content-between'>
+                <div className="shop-title d-flex flex-wrap justify-content-between">
                   <p>{showResults}</p>
-                  <div className={`product-view-mode ${gridList ? 'gridActive' : 'listActive'}`}>
-                    <a className='grid' onClick={() => setGridList(!gridList)}>
-                      <i className='icofont-ghost'></i>
+                  <div
+                    className={`product-view-mode ${
+                      gridList ? "gridActive" : "listActive"
+                    }`}
+                  >
+                    <a className="grid" onClick={() => setGridList(!gridList)}>
+                      <i className="icofont-ghost"></i>
                     </a>
-                    <a className='list' onClick={() => setGridList(!gridList)}>
-                      <i className='icofont-listine-dots'></i>
+                    <a className="list" onClick={() => setGridList(!gridList)}>
+                      <i className="icofont-listine-dots"></i>
                     </a>
                   </div>
                 </div>
                 {/* Product Cards */}
                 <div>
-                  <ProductCards gridList={gridList} fruitsProducts={fruitsProducts}/>
+                  <ProductCards
+                    gridList={gridList}
+                    fruitsProducts={fruitsProducts}
+                  />
                 </div>
                 <Pagination
-                productsPerPage={productsPerPage}
-                totalProducts={fruitsProducts.length}
-                paginate={paginate}
-                activePage={currentPage}
-                 />
+                  productsPerPage={productsPerPage}
+                  totalProducts={fruitsProducts.length}
+                  paginate={paginate}
+                  activePage={currentPage}
+                />
               </article>
             </div>
-            <div className='col-lg-4 col-12'>
+            <div className="col-lg-4 col-12">
               <aside>
-                <Search fruitsProducts={fruitsProducts} gridList={gridList}/>
+                <Search fruitsProducts={fruitsProducts} gridList={gridList} />
               </aside>
             </div>
           </div>
