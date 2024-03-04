@@ -43,7 +43,7 @@ const router = createBrowserRouter([
       { path: "/blog", element: <Blog /> },
       { path: "/shop", element: <Shop /> },
       { path: "/fruits", element: <Fruits /> },
-      { path: "fruits/:id", element: <SingleProduct /> },
+      { path: "/:category/:id", element: <SingleProduct /> },
       { path: "/vegetables", element: <Vegetables /> },
       { path: "/juices", element: <Juices /> },
       { path: "/bread", element: <Bread /> },
