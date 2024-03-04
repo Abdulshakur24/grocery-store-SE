@@ -1,58 +1,74 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import 'swiper/css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import "swiper/css";
+import { Provider as ReduxProvider } from "react-redux";
+import { PersistGate } from "reduxjs-toolkit-persist/integration/react";
+import { persistStore } from "reduxjs-toolkit-persist";
+import store from "./redux/store.js";
 
 // bootstrap css
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 // fonts and icons
-import '././assets/css/icofont.min.css';
-import '././assets/css/animate.css';
-import '././assets/css/style.min.css';
+import "././assets/css/icofont.min.css";
+import "././assets/css/animate.css";
+import "././assets/css/style.min.css";
 
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/home/Home.jsx";
+import Blog from "./pages/blog/Blog.jsx";
+import Shop from "./pages/shop/Shop.jsx";
+import Fruits from "./pages/fruits/Fruits.jsx";
+import Vegetables from "./pages/vegetables/Vegetables.jsx";
+import Juices from "./pages/juices/Juices.jsx";
+import Bread from "./pages/bread/Bread.jsx";
+import Cheese from "./pages/cheese/Cheese.jsx";
+import Smoothies from "./pages/smoothies/Smoothies.jsx";
+import SingleProduct from "./pages/fruits/SingleProduct.jsx";
+import SettingUpAnApp from "./skeletons/SettingUp.jsx";
+import { ModalProvider } from "./contexts/ModalProvider.jsx";
+import Modal from "./components/Modal";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from './home/Home.jsx';
-import Blog from './blog/Blog.jsx';
-import Shop from './shop/Shop.jsx';
-import Fruits from './fruits/Fruits.jsx';
-import Vegetables from './vegetables/Vegetables.jsx';
-import Juices from './juices/Juices.jsx';
-import Bread from './bread/Bread.jsx';
-import Cheese from './cheese/Cheese.jsx';
-import Smoothies from './smoothies/Smoothies.jsx';
-import SingleProduct from './fruits/SingleProduct.jsx';
-
-
+const persistor = persistStore(store);
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      {path: "/", element: <Home />},
-      {path: "/blog", element: <Blog />},
-      {path: "/shop", element: <Shop />},
-      {path: "/fruits", element: <Fruits />},
-      {path: "fruits/:id", element: <SingleProduct/>},
-      {path: "/vegetables", element: <Vegetables />},
-      {path: "/juices", element: <Juices />},
-      {path: "/bread", element: <Bread />},
-      {path: "/cheese", element: <Cheese />},
-      {path: "/smoothies", element: <Smoothies />},
-  
-      
-
-    ]
+      { path: "/", element: <Home /> },
+      { path: "/blog", element: <Blog /> },
+      { path: "/shop", element: <Shop /> },
+      { path: "/fruits", element: <Fruits /> },
+      { path: "fruits/:id", element: <SingleProduct /> },
+      { path: "/vegetables", element: <Vegetables /> },
+      { path: "/juices", element: <Juices /> },
+      { path: "/bread", element: <Bread /> },
+      { path: "/cheese", element: <Cheese /> },
+      { path: "/smoothies", element: <Smoothies /> },
+    ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <ReduxProvider store={store}>
+      <PersistGate
+        persistor={persistor}
+        loading={
+          <div className="h-screen">
+            <SettingUpAnApp />
+          </div>
+        }
+      >
+        <ModalProvider>
+          <RouterProvider router={router} />
+          <Modal />
+        </ModalProvider>
+      </PersistGate>
+    </ReduxProvider>
+  </React.StrictMode>
+);
