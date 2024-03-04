@@ -155,7 +155,7 @@
     "ratingsCount": 37,
     "img": "src/assets/images/fruits/green-grapes.jpg",
     "shipping": 48,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "8a5b4a9c-76ea-4fbb-9c70-9548de4eab01",
@@ -297,7 +297,7 @@
     "ratingsCount": 445,
     "img": "src/assets/images/juices/pineapple-juice.jpg",
     "shipping": 19,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "7490b4c8-8242-4de5-b161-b8ac96ea0e0b",
@@ -309,7 +309,7 @@
     "ratingsCount": 83,
     "img": "src/assets/images/juices/strawberry-juice.jpg",
     "shipping": 24,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "b1872b25-ba91-48ed-9468-1822df0637b9",
@@ -321,7 +321,7 @@
     "ratingsCount": 4,
     "img": "src/assets/images/juices/passion-juice.jpg",
     "shipping": 1,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "ea028038-4e9d-42bf-b033-88aa5e6cc477",
@@ -333,7 +333,7 @@
     "ratingsCount": 1,
     "img": "src/assets/images/juices/watermelon-juice.jpg",
     "shipping": 26,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "d48e0fcb-904c-499e-93a0-312d77e6dbf9",
@@ -345,7 +345,7 @@
     "ratingsCount": 39,
     "img": "src/assets/images/juices/apple-juice.jpg",
     "shipping": 32,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "a9d89eac-7418-4bca-a484-c8238c356270",
@@ -357,7 +357,7 @@
     "ratingsCount": 14,
     "img": "src/assets/images/juices/orange-juice.jpg",
     "shipping": 48,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "71dfc7f9-844b-4be7-816f-891a5cbaa0f1",
@@ -369,7 +369,7 @@
     "ratingsCount": 47,
     "img": "src/assets/images/juices/grapefruit-juice.jpg",
     "shipping": 24,
-    "quantity": 0
+    "quantity": 1
   },
 
   {
@@ -382,7 +382,7 @@
     "ratingsCount": 15,
     "img": "src/assets/images/bread/baguette.jpg",
     "shipping": 6,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "5960bf40-9603-4a39-9ff6-6cf9f1ce4815",
@@ -394,7 +394,7 @@
     "ratingsCount": 3,
     "img": "src/assets/images/bread/wholewheat.jpg",
     "shipping": 14,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "5991add1-f4ba-4fb9-9b6b-ec59aa2dda60",
@@ -406,7 +406,7 @@
     "ratingsCount": 32,
     "img": "src/assets/images/bread/sourdough.jpg",
     "shipping": 47,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "5690e579-a943-4b42-9ffe-dfc65b71c560",
@@ -418,7 +418,7 @@
     "ratingsCount": 30,
     "img": "src/assets/images/bread/multigrain.jpg",
     "shipping": 14,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "be7a4d0a-c681-416c-ab8d-f9be28223f4e",
@@ -430,7 +430,7 @@
     "ratingsCount": 22,
     "img": "src/assets/images/bread/pita.jpg",
     "shipping": 23,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "b278e667-ca17-465c-b603-af1af4319b7b",
@@ -442,7 +442,7 @@
     "ratingsCount": 51,
     "img": "src/assets/images/bread/white.jpg",
     "shipping": 30,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "4a0090e7-b65d-4f6e-a42b-5603a3f51883",
@@ -454,7 +454,7 @@
     "ratingsCount": 365,
     "img": "src/assets/images/cheese/feta.jpg",
     "shipping": 23,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "0ac76ee7-53f1-45ba-b5ca-81ff6063bc1a",
@@ -466,7 +466,7 @@
     "ratingsCount": 465,
     "img": "src/assets/images/cheese/mozzarella.jpg",
     "shipping": 36,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "1770549a-571b-4baf-bc58-7bae7a228dcb",
@@ -478,7 +478,7 @@
     "ratingsCount": 346,
     "img": "src/assets/images/cheese/gouda.jpg",
     "shipping": 42,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "24b20ba6-9024-4b0a-b8a9-cf937521cede",
@@ -490,7 +490,7 @@
     "ratingsCount": 234,
     "img": "src/assets/images/cheese/manchego.jpg",
     "shipping": 21,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "a7231186-0316-4cc0-94bf-4f496a382346",
@@ -502,7 +502,7 @@
     "ratingsCount": 241,
     "img": "src/assets/images/cheese/brie.jpg",
     "shipping": 15,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "35ac57f9-870a-4299-aac8-e5d8d2716b31",
@@ -514,7 +514,7 @@
     "ratingsCount": 168,
     "img": "src/assets/images/cheese/camembert.jpg",
     "shipping": 14,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "c50bebaf-2633-4674-aba2-25be34bfdbba",
@@ -526,7 +526,7 @@
     "ratingsCount": 311,
     "img": "src/assets/images/cheese/montagnolo.jpg",
     "shipping": 40,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "1f56c0e5-4407-44bf-9225-90f592d2924a",
@@ -538,7 +538,7 @@
     "ratingsCount": 66,
     "img": "src/assets/images/cheese/parmesan.jpg",
     "shipping": 15,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "id": "4ead4708-68e8-4a93-b28e-5e99ccc4d75c",
@@ -550,6 +550,6 @@
     "ratingsCount": 6,
     "img": "src/assets/images/cheese/cheddar.jpg",
     "shipping": 29,
-    "quantity": 0
+    "quantity": 1
   }
 ]
