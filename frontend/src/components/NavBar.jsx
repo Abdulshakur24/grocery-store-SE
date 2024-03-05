@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { IoFastFoodSharp } from "react-icons/io5";
 
 const NavBar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -32,7 +33,9 @@ const NavBar = () => {
             <Link to="/signup" className="lab-btn me-3">
               <span>Create Account</span>
             </Link>
-            <Link to="/login">Login</Link>
+            <Link to="/login" className="lab-btn me-3">
+              <span>Login</span>
+            </Link>
           </div>
         </div>
       </div>
@@ -42,29 +45,30 @@ const NavBar = () => {
           <div className="header-wrapper">
             {/* Logo*/}
             <div className="logo-search-acte">
-              <div className="logo">
-                <Link to={"/"}>Harvest Haven</Link>
+              <div className="">
+                <Link to={"/"} className="flex items-center gap-3">
+                  <IoFastFoodSharp className="fill-white scale-[3]" />
+                  <h4 className="text-white italic">Grocery Store</h4>
+                </Link>
               </div>
             </div>
             {/* Menu */}
             <div className="menu-area">
               <div className="menu">
                 <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
-                  <li>
-                    <Link to="/">Home</Link>
-                  </li>
-                  <li>
-                    <Link to="/shop">Shop</Link>
-                  </li>
-                  <li>
-                    <Link to="/blog">Blog</Link>
-                  </li>
-                  <li>
-                    <Link to="/about">About Us</Link>
-                  </li>
-                  <li>
-                    <Link to="/contact">Contact Us</Link>
-                  </li>
+                  {[
+                    { id: 1, path: "/", name: "Home" },
+                    { id: 2, path: "/shop", name: "Shop" },
+                    { id: 3, path: "/blog", name: "Blog" },
+                    { id: 4, path: "/about", name: "About" },
+                    { id: 5, path: "/contact", name: "Contact Us" },
+                  ].map(({ id, path, name }) => (
+                    <li key={id}>
+                      <Link to={path} className="text-white">
+                        {name}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
               {user ? (
