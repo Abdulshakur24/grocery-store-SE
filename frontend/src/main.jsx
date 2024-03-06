@@ -31,6 +31,7 @@ import SingleProduct from "./pages/fruits/SingleProduct.jsx";
 import SettingUpAnApp from "./skeletons/SettingUp.jsx";
 import { ModalProvider } from "./contexts/ModalProvider.jsx";
 import Modal from "./components/Modal";
+import SingleBlog from "./pages/blog/SingleBlog.jsx";
 
 const persistor = persistStore(store);
 
@@ -41,6 +42,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/blog", element: <Blog /> },
+      { path: "/blog/:id", element: <SingleBlog /> },
       { path: "/shop", element: <Shop /> },
       { path: "/fruits", element: <Fruits /> },
       { path: "/:category/:id", element: <SingleProduct /> },
