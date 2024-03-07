@@ -13,7 +13,7 @@ export const socketAutoLogin = (
     try {
       const userFromToken = (await verifyToken(token)) as User;
       const user = await prisma.user.findUnique({
-        where: { userId: userFromToken.userId },
+        where: { userID: userFromToken.userID },
       });
 
       if (user) {
