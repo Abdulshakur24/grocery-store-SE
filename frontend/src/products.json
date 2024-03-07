@@ -551,5 +551,89 @@
     "img": "src/assets/images/cheese/cheddar.jpg",
     "shipping": 29,
     "quantity": 1
-  }
+  },
+  {
+    "id": "6602468a-a3a8-4c2c-9d3a-fd54e2c5daf7",
+    "category": "smoothies",
+    "name": "Mango Smoothie",
+    "price": "Ksh.200",
+    "stock": 6,
+    "ratings": 5,
+    "ratingsCount": 354,
+    "img": "src/assets/images/smoothies/mango-smoothie.jpg",
+    "shipping": 26,
+    "quantity": 0
+},
+{
+    "id": "5db3ee2f-2eb7-4764-942d-894f72198e86",
+    "category": "smoothies",
+    "name": "Banana Smoothie",
+    "price": "Ksh.200",
+    "stock": 3,
+    "ratings": 4,
+    "ratingsCount": 584,
+    "img": "src/assets/images/smoothies/banana-smoothie.jpg",
+    "shipping": 33,
+    "quantity": 0
+},
+{
+    "id": "9b169efb-0966-40f3-b9c2-79b16cb96388",
+    "category": "smoothies",
+    "name": "Green Smoothie",
+    "price": "Ksh.280",
+    "stock": 13,
+    "ratings": 3,
+    "ratingsCount": 1010,
+    "img": "src/assets/images/smoothies/green-smoothie.jpg",
+    "shipping": 4,
+    "quantity": 0
+},
+{
+    "id": "fb1f9913-d903-498c-9e4a-16d363aa2eba",
+    "category": "smoothies",
+    "name": "Banana Almond Smoothie",
+    "price": "Ksh.350",
+    "stock": 14,
+    "ratings": 4,
+    "ratingsCount": 2422,
+    "img": "src/assets/images/smoothies/banana-almond-smoothie.jpg",
+    "shipping": 39,
+    "quantity": 0
+},
+{
+    "id": "fe48e340-4dc9-44b3-911b-9308b4f530b3",
+    "category": "smoothies",
+    "name": "Papaya Smoothie",
+    "price": "Ksh.250",
+    "stock": 16,
+    "ratings": 3,
+    "ratingsCount": 1533,
+    "img": "src/assets/images/smoothies/papaya-smoothie.jpg",
+    "shipping": 33,
+    "quantity": 0
+},
+{
+  "id": "d1116075-10f2-49c4-985e-0d41e19ce1b3",
+  "category": "smoothies",
+  "name": "Strawberry Smoothie",
+  "price": "Ksh.260",
+  "stock": 15,
+  "ratings": 5,
+  "ratingsCount": 9,
+  "img": "src/assets/images/smoothies/strawb-smoothie.jpg",
+  "shipping": 48,
+  "quantity": 0
+},
+{
+  "id": "d1116075-10f2-49c4-985e-fg41e19dc1b8",
+  "category": "smoothies",
+  "name": "Kiwi Smoothie",
+  "price": "Ksh.400",
+  "stock": 15,
+  "ratings": 5,
+  "ratingsCount": 55,
+  "img": "src/assets/images/smoothies/kiwi-smoothie.jpg",
+  "shipping": 48,
+  "quantity": 0
+}
 ]
