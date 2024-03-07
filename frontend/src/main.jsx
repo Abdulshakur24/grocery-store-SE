@@ -32,6 +32,7 @@ import SettingUpAnApp from "./skeletons/SettingUp.jsx";
 import { ModalProvider } from "./contexts/ModalProvider.jsx";
 import Modal from "./components/Modal";
 import SingleBlog from "./pages/blog/SingleBlog.jsx";
+import LoginPage from "./pages/login/LoginPage.jsx";
 
 const persistor = persistStore(store);
 
@@ -51,6 +52,7 @@ const router = createBrowserRouter([
       { path: "/bread", element: <Bread /> },
       { path: "/cheese", element: <Cheese /> },
       { path: "/smoothies", element: <Smoothies /> },
+      { path: "/login", element: <LoginPage /> },
     ],
   },
 ]);
