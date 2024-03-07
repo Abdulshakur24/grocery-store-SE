@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { IoFastFoodSharp } from "react-icons/io5";
 import { BsCart4 } from "react-icons/bs";
 import useModal from "../hooks/useModal";
 import CartModal from "./CartModal";
+import { MdOutlineLogout } from "react-icons/md";
+import { logout } from "../redux/slicers/userSlice";
+import { clearToken } from "../redux/slicers/tokenSlice";
 
 const NavBar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -27,6 +30,7 @@ const NavBar = () => {
   }, []);
 
   const navigator = useNavigate();
+  const dispatch = useDispatch();
 
   return (
     /* Header top */
@@ -77,19 +81,27 @@ const NavBar = () => {
                 </ul>
               </div>
               {user ? (
-                <div
-                  className="flex relative"
-                  onClick={() => {
-                    toggleModal();
-                    setChildren(() => <CartModal navigator={navigator} />);
-                  }}
-                >
-                  {cart.length >= 1 && (
-                    <p className="absolute z-10 flex items-center justify-center text-[14px] w-[20px] h-[20px] rounded-full p-1 bg-white text-black top-[-18px] right-[-20px]">
-                      {cart.length >= 10 ? "+9" : cart.length}
-                    </p>
-                  )}
-                  <BsCart4 className="fill-white scale-[2.5] cursor-pointer" />
+                <div className="flex relative gap-10">
+                  <div
+                    onClick={() => {
+                      toggleModal();
+                      setChildren(() => <CartModal navigator={navigator} />);
+                    }}
+                  >
+                    {cart.length >= 1 && (
+                      <p className="absolute z-10 flex items-center justify-center text-[14px] w-[20px] h-[20px] rounded-full p-1 bg-white text-black top-[-18px] right-[-20px]">
+                        {cart.length >= 10 ? "+9" : cart.length}
+                      </p>
+                    )}
+                    <BsCart4 className="fill-white scale-[2] cursor-pointer" />
+                  </div>
+                  <MdOutlineLogout
+                    className="fill-white scale-[2] cursor-pointer"
+                    onClick={() => {
+                      dispatch(logout());
+                      dispatch(clearToken());
+                    }}
+                  />
                 </div>
               ) : (
                 <>
