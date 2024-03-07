@@ -20,6 +20,7 @@ const limitPasswordFrequenceChange = rateLimit(passwordRateLimitOptions);
 userRouter.use("/password", limitPasswordFrequenceChange);
 
 userRouter.post("/login", userController.signInUser);
+userRouter.post("/register", userController.signUpUser);
 
 userRouter.use(isAuthenticated);
 
