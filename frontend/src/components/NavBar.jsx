@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoFastFoodSharp } from "react-icons/io5";
+import { BsCart4 } from "react-icons/bs";
+import useModal from "../hooks/useModal";
+import CartModal from "./CartModal";
 
 const NavBar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -9,6 +12,9 @@ const NavBar = () => {
   const [headerFixed, setHeaderFixed] = useState(false);
 
   const { user } = useSelector((state) => state.userState);
+  const { cart } = useSelector((state) => state.cartState);
+
+  const { toggleModal, setChildren } = useModal();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -20,6 +26,8 @@ const NavBar = () => {
     });
   }, []);
 
+  const navigator = useNavigate();
+
   return (
     /* Header top */
     <header
@@ -30,9 +38,6 @@ const NavBar = () => {
       <div className={`header-top d-md-none ${socialToggle ? "open" : ""}`}>
         <div className="container">
           <div className="header-top-area">
-            <Link to="/signup" className="lab-btn me-3">
-              <span>Create Account</span>
-            </Link>
             <Link to="/login" className="lab-btn me-3">
               <span>Login</span>
             </Link>
@@ -72,12 +77,22 @@ const NavBar = () => {
                 </ul>
               </div>
               {user ? (
-                <div>{user.username}</div>
+                <div
+                  className="flex relative"
+                  onClick={() => {
+                    toggleModal();
+                    setChildren(() => <CartModal navigator={navigator} />);
+                  }}
+                >
+                  {cart.length >= 1 && (
+                    <p className="absolute z-10 flex items-center justify-center text-[14px] w-[20px] h-[20px] rounded-full p-1 bg-white text-black top-[-18px] right-[-20px]">
+                      {cart.length >= 10 ? "+9" : cart.length}
+                    </p>
+                  )}
+                  <BsCart4 className="fill-white scale-[2.5] cursor-pointer" />
+                </div>
               ) : (
                 <>
-                  <Link to="/signup" className="lab-btn me-3 d-none d-md-block">
-                    Create Account
-                  </Link>
                   <Link to="/login" className="lab-btn me-3 d-none d-md-block">
                     Login
                   </Link>
@@ -94,12 +109,14 @@ const NavBar = () => {
                 <span></span>
               </div>
               {/* Social toggle */}
-              <div
-                className="ellepsis-bar d-md-none"
-                onClick={() => setSocialToggle(!socialToggle)}
-              >
-                <i className="icofont-info-circle"></i>
-              </div>
+              {!user && (
+                <div
+                  className="ellepsis-bar d-md-none"
+                  onClick={() => setSocialToggle(!socialToggle)}
+                >
+                  <i className="icofont-info-circle"></i>
+                </div>
+              )}
             </div>
           </div>
         </div>
