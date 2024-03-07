@@ -1,10 +1,6 @@
 import { Socket, Server as SocketIO } from "socket.io";
 import { Server } from "http";
-import {
-  socketAutoLogin,
-  socketChatGPTForEveryone,
-  socketChatGPTForStudent,
-} from "../sockets/socketControllers";
+import { socketAutoLogin } from "../sockets/socketControllers";
 import { DefaultEventsMap } from "socket.io/dist/typed-events";
 
 let io: SocketIO | null = null;
@@ -30,10 +26,6 @@ export const initIO = (httpServer: Server): SocketIO => {
       console.log("Client Connected");
 
       socketAutoLogin(socket, io);
-
-      socketChatGPTForStudent(socket, io);
-
-      socketChatGPTForEveryone(socket, io);
 
       socket.on("disconnect", () => {
         console.log("Client disconnected");

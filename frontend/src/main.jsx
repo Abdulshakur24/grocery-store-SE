@@ -18,6 +18,7 @@ import "././assets/css/animate.css";
 import "././assets/css/style.min.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import Home from "./pages/home/Home.jsx";
 import Blog from "./pages/blog/Blog.jsx";
 import Shop from "./pages/shop/Shop.jsx";
@@ -33,6 +34,7 @@ import { ModalProvider } from "./contexts/ModalProvider.jsx";
 import Modal from "./components/Modal";
 import SingleBlog from "./pages/blog/SingleBlog.jsx";
 import LoginPage from "./pages/login/LoginPage.jsx";
+import PublicRoutes from "./layout/PublicRoute.jsx";
 
 const persistor = persistStore(store);
 
@@ -52,7 +54,14 @@ const router = createBrowserRouter([
       { path: "/bread", element: <Bread /> },
       { path: "/cheese", element: <Cheese /> },
       { path: "/smoothies", element: <Smoothies /> },
-      { path: "/login", element: <LoginPage /> },
+      {
+        path: "/login",
+        element: (
+          <PublicRoutes>
+            <LoginPage />
+          </PublicRoutes>
+        ),
+      },
     ],
   },
 ]);
@@ -71,6 +80,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <ModalProvider>
           <RouterProvider router={router} />
           <Modal />
+          <Toaster />
         </ModalProvider>
       </PersistGate>
     </ReduxProvider>

@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { addItem } from "../../redux/slicers/cartSlice";
 
 const ProductDisplay = ({ item }) => {
   const { name, id, price, ratingsCount, quantity, desc, img } = item;
   const [prequantity, setQuantity] = useState(quantity);
   const [coupon, setCoupon] = useState("");
+  const dispatch = useDispatch();
 
   const handleDecrease = () => {
     if (prequantity > 1) {
@@ -16,30 +19,17 @@ const ProductDisplay = ({ item }) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const product = {
-        id:id,
-        img:img,
-        name:name,
-        price:price,
-        quantity:prequantity,
-        coupon:coupon
-    }
-    const existingCart =JSON.parse(localStorage.getItem('cart')) || [];
-
-    const existingProductIndex = existingCart.findIndex((item) => item.id ===id);
-
-    if(existingProductIndex !== -1) {
-        existingCart[existingProductIndex].quantity += prequantity;
-    } else{
-        existingCart.push(product);
-    }
-    // update local storage
-    localStorage.setItem('cart', JSON.stringify(existingCart));
-
-    //reset form fields
-    setQuantity(1);
-    setCoupon('');
-  }
+    dispatch(
+      addItem({
+        id: id,
+        img: img,
+        name: name,
+        price: price,
+        quantity: prequantity,
+        coupon: coupon,
+      })
+    );
+  };
 
   return (
     <div>

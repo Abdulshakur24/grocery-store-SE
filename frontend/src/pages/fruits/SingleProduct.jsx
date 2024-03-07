@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
 import ProductDisplay from "./ProductDisplay";
+import "swiper/css";
 
 const SingleProduct = () => {
   const [product, setProduct] = useState({});
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [productsData, setProductsData] = useState([]); // Add a state for the whole dataset
+  const [productsData, setProductsData] = useState([]);
   const { id } = useParams();
   const navigate = useNavigate();
 
@@ -17,7 +16,7 @@ const SingleProduct = () => {
       const data = await import("/src/products.json").then(
         (data) => data.default
       );
-      setProductsData(data); // Store the fetched data
+      setProductsData(data);
 
       const product = data.find((p) => p.id === id) || {};
       setProduct(product);
