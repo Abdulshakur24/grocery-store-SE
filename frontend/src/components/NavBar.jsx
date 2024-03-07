@@ -81,8 +81,9 @@ const NavBar = () => {
                 </ul>
               </div>
               {user ? (
-                <div className="flex relative gap-10">
+                <div className="flex gap-10">
                   <div
+                    className="relative"
                     onClick={() => {
                       toggleModal();
                       setChildren(() => <CartModal navigator={navigator} />);
