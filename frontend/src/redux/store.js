@@ -1,5 +1,8 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import userState from "./slicers/userSlice";
+import userToken from "./slicers/tokenSlice";
+import cartState from "./slicers/cartSlice";
+
 import {
   persistReducer,
   FLUSH,
@@ -13,6 +16,8 @@ import storage from "reduxjs-toolkit-persist/lib/storage";
 
 const rootReducer = combineReducers({
   userState,
+  userToken,
+  cartState,
 });
 
 const persistedReducer = persistReducer(
@@ -20,7 +25,7 @@ const persistedReducer = persistReducer(
     key: "root",
     storage,
     version: 0.1,
-    blacklist: ["userState"],
+    blacklist: ["userState", "cartState"],
   },
   rootReducer
 );
