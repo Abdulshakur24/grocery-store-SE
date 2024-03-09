@@ -2,7 +2,6 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { clearCart } from "../redux/slicers/cartSlice";
 import CartItem from "./CartItem";
-import { Link } from "react-router-dom";
 import useModal from "../hooks/useModal";
 
 function CartModal({ navigator }) {
@@ -12,11 +11,11 @@ function CartModal({ navigator }) {
   const { toggleModal } = useModal();
 
   const getTotalPrice = () => {
-    return cart.reduce((acc, { price, quantity }) => {
-      const numericPrice = parseFloat(price.replace(/[^0-9.]/g, ""));
-
-      return acc + numericPrice * 1000 * quantity;
-    }, 0);
+    return cart.reduce(
+      (acc, { price, quantity }) =>
+        acc + parseInt(price.replace("Ksh.", "")) * quantity,
+      0
+    );
   };
 
   return (
