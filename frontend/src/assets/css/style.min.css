@@ -6755,7 +6755,7 @@ button {
   border: 10px solid #fff;
 }
 .about-section.style-3 .about-left .abs-thumb {
-  right: 15px;
+  left: 300px;
   bottom: -60px;
   box-shadow: 0 0 10px rgba(16, 17, 21, 0.1);
 }

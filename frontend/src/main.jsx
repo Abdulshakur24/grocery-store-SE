@@ -36,6 +36,7 @@ import SingleBlog from "./pages/blog/SingleBlog.jsx";
 import LoginPage from "./pages/login/LoginPage.jsx";
 import PublicRoutes from "./layout/PublicRoute.jsx";
 import CartPage from "./components/CartPage.jsx";
+import About from "./pages/about/About.jsx";
 
 
 const persistor = persistStore(store);
@@ -57,6 +58,8 @@ const router = createBrowserRouter([
       { path: "/cheese", element: <Cheese /> },
       { path: "/smoothies", element: <Smoothies /> },
       { path: "/cart-page", element: <CartPage/> },
+      { path: "/about", element: <About/> },
+
 
       {
         path: "/login",
