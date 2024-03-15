@@ -30,7 +30,7 @@ const SingleBlog = () => {
         <div>
             <div className="blog-section blog-single padding-tb section-bg">
                 <div className="container">
-                    <div className="row justify-coontent-center">
+                    <div className="row justify-content-center">
                         <div className="col-lg-8 col-12">
                             <article>
                                 <div className="section-wrapper">

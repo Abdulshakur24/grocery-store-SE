@@ -17,11 +17,7 @@ const About = () => {
             <div className="col">
               <div className="about-left">
                 <div className="about-thumb">
-                  <motion.img
-                  initial={{x:-100,opacity:0}} 
-                  animate={{x: 0,opacity: 1}}
-                  transition={{delay: 0.2, x:{type:"spring", stiffness:60}, opacity:{duration:1}, ease:"easeIn", duration:1}}
-                  src="/src/assets/images/about/about-fruit.jpg" alt="" />
+                  <img src="/src/assets/images/about/about-fruit.jpg" alt="" />
                 </div>
                 <div className="abs-thumb">
                   <img src="/src/assets/images/about/about-veggies.jpg" alt="" />
@@ -37,16 +33,9 @@ const About = () => {
               <div className="about-right">
                 <div className="section-header">
                   <span className="subtitle">{subTitle}</span>
-                  <motion.h2
-                  initial={{x:100,opacity:0}} 
-                  animate={{x: 0,opacity: 1}}
-                  viewport={{once:true}}
-                  transition={{delay: 0.2, x:{type:"spring", stiffness:60}, opacity:{duration:1}, ease:"easeIn", duration:1}}
-                  >{title}</motion.h2>
+                  <h2>{title}</h2>
                   <p>{desc}</p>
                 </div>
-
-                
               </div>
             </div>
           </div>

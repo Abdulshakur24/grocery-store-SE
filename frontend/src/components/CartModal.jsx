@@ -53,7 +53,7 @@ function CartModal({ navigator }) {
               className="w-full bg-green-700 text-white disabled:cursor-not-allowed disabled:opacity-45"
               disabled={cart.length === 0}
               onClick={() => {
-                navigator("/cart-page");
+                navigator("/checkout");
                 toggleModal(false);
               }}
             >

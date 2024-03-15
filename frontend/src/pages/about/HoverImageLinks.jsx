@@ -1,6 +1,6 @@
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef } from "react";
-import { FiArrowRight } from "react-icons/fi";
+
 
 export const HoverImageLinks = () => {
   return (
@@ -111,19 +111,8 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
       </div>
 
       <motion.img
-        style={{
-          top,
-          left,
-          translateX: "-50%",
-          translateY: "-50%",
-        }}
-        variants={{
-          initial: { scale: 0, rotate: "-12.5deg" },
-          whileHover: { scale: 1, rotate: "12.5deg" },
-        }}
-        transition={{ type: "spring" }}
         src={imgSrc}
-        className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
+        className=" z-0 h-20 w-32 rounded-lg  md:h-32 md:w-40 flex align-items-center justify-content-start"
         alt={`Image representing a link for ${heading}`}
       />
 

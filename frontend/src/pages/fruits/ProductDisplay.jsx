@@ -77,7 +77,7 @@ const ProductDisplay = ({ item }) => {
           <button type="submit" className="lab-btn">
             <span>Add To Cart</span>
           </button>
-          <Link to="/cart-page" className="lab-btn bg-black">
+          <Link to="/checkout" className="lab-btn bg-black">
             <span>Check Out</span>
           </Link>
         </form>
