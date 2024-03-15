@@ -1,5 +1,5 @@
 import React from "react";
-import CartModal from "../../components/CartModal";
+import CheckoutCart from "./CheckoutCart";
 
 const Checkout = () => {
     return (
@@ -86,7 +86,7 @@ const Checkout = () => {
                 </form>
             </div>
             <div className="col-lg-5 col-12 bg-orange-100 flex align-items-center justify-content-start flex-col pt-6" >
-                <CartModal/>
+                <CheckoutCart/>
             </div>
 
         </div>
