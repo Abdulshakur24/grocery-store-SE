@@ -1,11 +1,13 @@
 import { useDispatch, useSelector } from "react-redux";
-import { Outlet, Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { useEffect } from "react";
-import { socket } from "../utils/socket-io";
-import { updateUser } from "src/redux/slicers/userSlice";
+import { connectToSocket } from "../utils/socket-io";
 import toast from "react-hot-toast";
+import { updateUser } from "../redux/slicers/userSlice";
 
-function PrivateRoutes() {
+const socket = connectToSocket();
+
+function PrivateRoutes({ children }) {
   const { user } = useSelector((state) => state.userState);
 
   const dispatch = useDispatch();
@@ -13,7 +15,6 @@ function PrivateRoutes() {
   useEffect(() => {
     if (user) {
       socket.on(`${user.userId}-user-update`, ({ user, message }) => {
-        console.log(user, message);
         if (user !== undefined) {
           dispatch(updateUser(user));
         }
@@ -27,6 +28,6 @@ function PrivateRoutes() {
     }
   }, [dispatch, user]);
 
-  return user ? <Outlet /> : <Navigate to={"/login"} replace />;
+  return user ? children : <Navigate to={"/login"} replace />;
 }
 export default PrivateRoutes;
