@@ -102,10 +102,6 @@ const SingleBlog = () => {
                                 </div>
                             </article>
                         </div>
-                        <div className="col-lg-4 col-12">
-                            <div className="bg-white"><h6>Tags will be here - under construction</h6></div>
-                            
-                        </div>
                     </div>
                 </div>
             </div>
