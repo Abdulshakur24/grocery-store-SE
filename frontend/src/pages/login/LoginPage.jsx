@@ -16,8 +16,6 @@ function LoginPage() {
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
 
-  console.log(token);
-
   const handleSignUpClick = () => {
     setIsSignUpMode(true);
   };
@@ -39,7 +37,6 @@ function LoginPage() {
       }),
     onSubmit: async (values) => {
       setLoading(true);
-      console.log(values);
 
       try {
         const {
@@ -83,7 +80,6 @@ function LoginPage() {
         const {
           data: { user },
         } = await api.post("/user/register", values);
-        console.log(user);
         setLoading(false);
         dispatch(loadUser({ user }));
         dispatch(updateToken(user.token));
