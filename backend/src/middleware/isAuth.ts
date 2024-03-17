@@ -4,7 +4,7 @@ import { getIO } from "../utils/socket";
 import { decode } from "jsonwebtoken";
 
 type payloadType = {
-  userId: number;
+  userID: number;
   exp: number;
 };
 
@@ -33,14 +33,14 @@ export const isAuthenticated = async (
 
   try {
     const payload = (await verifyToken(token)) as payloadType;
-    req.userID = payload.userId;
+    req.userID = payload.userID;
 
     return next();
   } catch (err: any) {
     const io = getIO();
 
     const payload = decode(token) as payloadType;
-    io.emit(`${payload.userId}-user-update`, {
+    io.emit(`${payload.userID}-user-update`, {
       type: "error",
       user: null,
       message: "Session expired, please login again.",
