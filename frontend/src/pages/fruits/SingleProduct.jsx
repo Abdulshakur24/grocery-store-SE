@@ -18,9 +18,9 @@ const SingleProduct = () => {
       );
       setProductsData(data);
 
-      const product = data.find((p) => p.id === id) || {};
+      const product = data.find((p) => p.id === parseInt(id)) || {};
       setProduct(product);
-      setCurrentIndex(data.findIndex((p) => p.id === id));
+      setCurrentIndex(data.findIndex((p) => p.id === parseInt(id)));
     };
 
     handle();
