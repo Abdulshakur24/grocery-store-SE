@@ -4,12 +4,30 @@ const showResults = "Showing 01 - 12 of 30 Results";
 import Data from "../../products.json";
 import ProductCards from "./ProductCards";
 import PageHeader from "../../components/PageHeader";
+import Pagination from "../../components/Pagination";
+import { Search } from "./Search";
 
 const Vegetables = () => {
   const [gridList, setGridList] = useState(true);
   const fruitsProducts = Data.filter(
     (product) => product.category === "vegetables"
   );
+
+  // Pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 12;
+
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = fruitsProducts.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
+
+  // Change the current page
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
   return (
     <div>
       <PageHeader
@@ -44,7 +62,18 @@ const Vegetables = () => {
                     fruitsProducts={fruitsProducts}
                   />
                 </div>
+                <Pagination
+                  productsPerPage={productsPerPage}
+                  totalProducts={fruitsProducts.length}
+                  paginate={paginate}
+                  activePage={currentPage}
+                />
               </article>
+            </div>
+            <div className="col-lg-4 col-12">
+              <aside>
+                <Search fruitsProducts={fruitsProducts} gridList={gridList} />
+              </aside>
             </div>
           </div>
         </div>
