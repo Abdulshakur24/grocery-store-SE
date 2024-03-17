@@ -1,8 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import useModal from "../hooks/useModal";
 
-function Modal({ position }) {
-  const { isOpen, toggleModal, children } = useModal();
+function Modal() {
+  const { isOpen, toggleModal, children, position } = useModal();
 
   return (
     <AnimatePresence>
