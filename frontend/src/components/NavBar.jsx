@@ -17,7 +17,7 @@ const NavBar = () => {
   const { user } = useSelector((state) => state.userState);
   const { cart } = useSelector((state) => state.cartState);
 
-  const { toggleModal, setChildren } = useModal();
+  const { toggleModal, setChildren, setPosition } = useModal();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -85,6 +85,7 @@ const NavBar = () => {
                   <div
                     className="relative"
                     onClick={() => {
+                      setPosition(false);
                       toggleModal();
                       setChildren(() => <CartModal navigator={navigator} />);
                     }}
