@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { clearCart } from "../../redux/slicers/cartSlice";
 
@@ -6,6 +6,18 @@ import useModal from "../../hooks/useModal";
 import CartItem from "../../components/CartItem";
 
 function CheckoutCart({ navigator }) {
+  const [headerFixed, setHeaderFixed] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        setHeaderFixed(true);
+      } else {
+        setHeaderFixed(false);
+      }
+    });
+  }, []);
+
   const { cart } = useSelector((state) => state.cartState);
   const dispatch = useDispatch();
 
@@ -21,10 +33,12 @@ function CheckoutCart({ navigator }) {
 
   return (
     <div
-      className="bg-white w-full flex flex-col items-start max-w-[450px] overflow-auto h-[550px] mt-[77px] mr-[50px] shadow-2xl rounded p-3"
+      className={`w-full sticky transition-all p-4 bg-  ${
+        headerFixed ? "top-[92px]" : "top-[0px]"
+      }`}
       onClick={(e) => e.stopPropagation()}
     >
-      <h3 className="m-0">Cart</h3>
+      <h3 className="">Your Cart</h3>
       <div className="flex flex-col gap-[0.5rem] w-full">
         <div className="w-full flex flex-col gap-4 h-screen max-h-[250px] no-scrollbar overflow-auto border-y py-3">
           {cart.length === 0 ? (
@@ -42,7 +56,7 @@ function CheckoutCart({ navigator }) {
             <input
               type="text"
               placeholder="Enter Discount Code"
-              onChange={(e) => setCoupon(e.target.value)}
+              // onChange={(e) => setCoupon(e.target.value)}
             />
           </div>
           <div className="flex items-center justify-center">
@@ -66,7 +80,6 @@ function CheckoutCart({ navigator }) {
             >
               Clear All
             </button>
-
           </div>
         </div>
       </div>
