@@ -1,6 +1,6 @@
 [
   {
-    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "id": 1,
     "category": "fruits",
     "name": "Avocadoes",
     "price": "Ksh.150",
@@ -13,7 +13,7 @@
     "quantity": 1
   },
   {
-    "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+    "id": 2,
     "category": "fruits",
     "name": "Apples",
     "price": "Ksh.180",
@@ -25,7 +25,7 @@
     "quantity": 1
   },
   {
-    "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+    "id": 3,
     "category": "fruits",
     "name": "Oranges",
     "price": "Ksh.100",
@@ -37,7 +37,7 @@
     "quantity": 1
   },
   {
-    "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+    "id": 4,
     "category": "fruits",
     "name": "Bananas",
     "price": "Ksh.100",
@@ -50,7 +50,7 @@
     "quantity": 1
   },
   {
-    "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+    "id": 5,
     "category": "fruits",
     "name": "Mangoes",
     "price": "Ksh.139",
@@ -62,7 +62,7 @@
     "quantity": 1
   },
   {
-    "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+    "id": 6,
     "category": "fruits",
     "name": "Strawberries",
     "price": "Ksh.240",
@@ -74,7 +74,7 @@
     "quantity": 1
   },
   {
-    "id": "9c0c13c2-54e4-4001-809b-afbd9d84037d",
+    "id": 7,
     "category": "fruits",
     "name": "Pineapple",
     "price": "Ksh.250",
@@ -86,7 +86,7 @@
     "quantity": 1
   },
   {
-    "id": "c9d1f410-d28f-49d9-9b01-d759b5acbeea",
+    "id": 8,
     "category": "fruits",
     "name": "Watermelon",
     "price": "Ksh.200",
@@ -98,7 +98,7 @@
     "quantity": 1
   },
   {
-    "id": "1564a06b-692f-4f2e-8413-9c8a1cc2da77",
+    "id": 9,
     "category": "fruits",
     "name": "Papayas",
     "price": "Ksh.75",
@@ -110,7 +110,7 @@
     "quantity": 1
   },
   {
-    "id": "ac44095f-230e-4502-8816-dea3eaae8320",
+    "id": 10,
     "category": "fruits",
     "name": "Red Grapes",
     "price": "Ksh.412",
@@ -122,7 +122,7 @@
     "quantity": 1
   },
   {
-    "id": "d0803f97-966f-4296-ad31-a7f70fc86fab",
+    "id": 11,
     "category": "fruits",
     "name": "Pixies",
     "price": "Ksh.120",
@@ -134,7 +134,7 @@
     "quantity": 1
   },
   {
-    "id": "ff5bf372-7ed1-4904-aac5-7a2ce98e70ef",
+    "id": 12,
     "category": "fruits",
     "name": "Peaches",
     "price": "Ksh.799",
@@ -146,7 +146,7 @@
     "quantity": 1
   },
   {
-    "id": "f6a5e6c0-5aec-4f10-84d7-bde9b6199045",
+    "id": 13,
     "category": "fruits",
     "name": "Green Grapes",
     "price": "Ksh.412",
@@ -158,7 +158,7 @@
     "quantity": 1
   },
   {
-    "id": "8a5b4a9c-76ea-4fbb-9c70-9548de4eab01",
+    "id": 14,
     "category": "vegetables",
     "name": "Tomatoes",
     "price": "Ksh.100",
@@ -170,7 +170,7 @@
     "quantity": 1
   },
   {
-    "id": "b357e19b-4dd9-4fc7-b5c0-9ed5255464ba",
+    "id": 15,
     "category": "vegetables",
     "name": "Spring Onions",
     "price": "Ksh.100",
@@ -182,7 +182,7 @@
     "quantity": 1
   },
   {
-    "id": "e4220958-06d2-4d50-96fa-0163a563f43d",
+    "id": 16,
     "category": "vegetables",
     "name": "Red Onions",
     "price": "Ksh.105",
@@ -194,7 +194,7 @@
     "quantity": 1
   },
   {
-    "id": "ae69f0e4-559c-4b24-8032-80b63f9b5073",
+    "id": 17,
     "category": "vegetables",
     "name": "White Onions",
     "price": "Ksh.120",
@@ -206,10 +206,10 @@
     "quantity": 1
   },
   {
-    "id": "dbf7ab3f-b383-4d95-8ab7-f55fcf6fa5f2",
+    "id": 18,
     "category": "vegetables",
     "name": "White Cabbage",
-    "price": 150,
+    "price": "Ksh.150",
     "stock": 26,
     "ratings": 5,
     "ratingsCount": 4557,
@@ -217,10 +217,10 @@
     "quantity": 1
   },
   {
-    "id": "ed6a7ac3-7e67-4e3f-8461-bceb5178be42",
+    "id": 19,
     "category": "vegetables",
     "name": "Sweet Potatoes",
-    "price": 150,
+    "price": "Ksh.150",
     "stock": 5,
     "ratings": 3,
     "ratingsCount": 3383,
@@ -229,7 +229,7 @@
     "quantity": 1
   },
   {
-    "id": "fd52819a-cb78-4510-ad2f-c5bdd888ae78",
+    "id": 20,
     "category": "vegetables",
     "name": "English Cucumbers",
     "price": "Ksh.80",
@@ -241,7 +241,7 @@
     "quantity": 1
   },
   {
-    "id": "c667d3ff-41eb-4cf7-a433-819d959ea768",
+    "id": 21,
     "category": "vegetables",
     "name": "Butternut Pumpkin",
     "price": "Ksh.100",
@@ -253,7 +253,7 @@
     "quantity": 1
   },
   {
-    "id": "e1dbc7fe-be17-4e0f-9e2d-6ad5dbc102fc",
+    "id": 22,
     "category": "vegetables",
     "name": "Coriander/Dhania",
     "price": "Ksh.15",
@@ -264,7 +264,7 @@
     "quantity": 1
   },
   {
-    "id": "0298e695-1f9b-49b1-9961-8a8460f95b1c",
+    "id": 23,
     "category": "vegetables",
     "name": "Green Peppers",
     "price": "Ksh.70",
@@ -276,7 +276,7 @@
     "quantity": 1
   },
   {
-    "id": "3cfe9adc-c27f-4be4-a859-a5c98ce88a27",
+    "id": 24,
     "category": "vegetables",
     "name": "Carrots",
     "price": "Ksh.150",
@@ -288,7 +288,7 @@
     "quantity": 1
   },
   {
-    "id": "83ef9902-0224-48d3-ba7c-eeff3e678d13",
+    "id": 25,
     "category": "juices",
     "name": "Pineapple Juice",
     "price": "Ksh.260",
@@ -300,7 +300,7 @@
     "quantity": 1
   },
   {
-    "id": "7490b4c8-8242-4de5-b161-b8ac96ea0e0b",
+    "id": 26,
     "category": "juices",
     "name": "Strawberry Juice",
     "price": "Ksh.280",
@@ -312,7 +312,7 @@
     "quantity": 1
   },
   {
-    "id": "b1872b25-ba91-48ed-9468-1822df0637b9",
+    "id": 27,
     "category": "juices",
     "name": "Passion Juice",
     "price": "Ksh.250",
@@ -324,7 +324,7 @@
     "quantity": 1
   },
   {
-    "id": "ea028038-4e9d-42bf-b033-88aa5e6cc477",
+    "id": 28,
     "category": "juices",
     "name": "Watermelon Juice",
     "price": "Ksh.240",
@@ -336,7 +336,7 @@
     "quantity": 1
   },
   {
-    "id": "d48e0fcb-904c-499e-93a0-312d77e6dbf9",
+    "id": 29,
     "category": "juices",
     "name": "Apple Juice",
     "price": "Ksh.260",
@@ -348,7 +348,7 @@
     "quantity": 1
   },
   {
-    "id": "a9d89eac-7418-4bca-a484-c8238c356270",
+    "id": 30,
     "category": "juices",
     "name": "Orange Juice",
     "price": "Ksh.250",
@@ -360,7 +360,7 @@
     "quantity": 1
   },
   {
-    "id": "71dfc7f9-844b-4be7-816f-891a5cbaa0f1",
+    "id": 31,
     "category": "juices",
     "name": "Grapefruit Juice",
     "price": "Ksh.300",
@@ -373,7 +373,7 @@
   },
 
   {
-    "id": "625b4b60-611c-490c-ac0a-f3c2d2afd05c",
+    "id": 32,
     "category": "bread",
     "name": "Baguette",
     "price": "Ksh.120",
@@ -385,7 +385,7 @@
     "quantity": 1
   },
   {
-    "id": "5960bf40-9603-4a39-9ff6-6cf9f1ce4815",
+    "id": 33,
     "category": "bread",
     "name": "Wholewheat Bread",
     "price": "Ksh.300",
@@ -397,7 +397,7 @@
     "quantity": 1
   },
   {
-    "id": "5991add1-f4ba-4fb9-9b6b-ec59aa2dda60",
+    "id": 34,
     "category": "bread",
     "name": "Sourdough Bread",
     "price": "Ksh.300",
@@ -409,7 +409,7 @@
     "quantity": 1
   },
   {
-    "id": "5690e579-a943-4b42-9ffe-dfc65b71c560",
+    "id": 35,
     "category": "bread",
     "name": "Multigrain Bread",
     "price": "Ksh.280",
@@ -421,7 +421,7 @@
     "quantity": 1
   },
   {
-    "id": "be7a4d0a-c681-416c-ab8d-f9be28223f4e",
+    "id": 36,
     "category": "bread",
     "name": "Pita Bread",
     "price": "Ksh.250",
@@ -433,7 +433,7 @@
     "quantity": 1
   },
   {
-    "id": "b278e667-ca17-465c-b603-af1af4319b7b",
+    "id": 37,
     "category": "bread",
     "name": "White Bread",
     "price": "Ksh.250",
@@ -445,7 +445,7 @@
     "quantity": 1
   },
   {
-    "id": "4a0090e7-b65d-4f6e-a42b-5603a3f51883",
+    "id": 38,
     "category": "cheese",
     "name": "Feta (250g)",
     "price": "Ksh.500",
@@ -457,7 +457,7 @@
     "quantity": 1
   },
   {
-    "id": "0ac76ee7-53f1-45ba-b5ca-81ff6063bc1a",
+    "id": 39,
     "category": "cheese",
     "name": "Mozzarella (200g)",
     "price": "Ksh.600",
@@ -469,7 +469,7 @@
     "quantity": 1
   },
   {
-    "id": "1770549a-571b-4baf-bc58-7bae7a228dcb",
+    "id": 40,
     "category": "cheese",
     "name": "Gouda (200g)",
     "price": "Ksh.670",
@@ -481,7 +481,7 @@
     "quantity": 1
   },
   {
-    "id": "24b20ba6-9024-4b0a-b8a9-cf937521cede",
+    "id": 41,
     "category": "cheese",
     "name": "Manchego (100g)",
     "price": "Ksh.1300",
@@ -493,7 +493,7 @@
     "quantity": 1
   },
   {
-    "id": "a7231186-0316-4cc0-94bf-4f496a382346",
+    "id": 42,
     "category": "cheese",
     "name": "Brie (125g)",
     "price": "Ksh.725",
@@ -505,7 +505,7 @@
     "quantity": 1
   },
   {
-    "id": "35ac57f9-870a-4299-aac8-e5d8d2716b31",
+    "id": 43,
     "category": "cheese",
     "name": "Camembert (200g)",
     "price": "Ksh.755",
@@ -517,7 +517,7 @@
     "quantity": 1
   },
   {
-    "id": "c50bebaf-2633-4674-aba2-25be34bfdbba",
+    "id": 44,
     "category": "cheese",
     "name": "Montagnolo (200g)",
     "price": "Ksh.750",
@@ -529,7 +529,7 @@
     "quantity": 1
   },
   {
-    "id": "1f56c0e5-4407-44bf-9225-90f592d2924a",
+    "id": 45,
     "category": "cheese",
     "name": "Parmesan (200g)",
     "price": "Ksh.1700",
@@ -541,7 +541,7 @@
     "quantity": 1
   },
   {
-    "id": "4ead4708-68e8-4a93-b28e-5e99ccc4d75c",
+    "id": 46,
     "category": "cheese",
     "name": "Cheddar (100g)",
     "price": "Ksh.416",
@@ -553,7 +553,7 @@
     "quantity": 1
   },
   {
-    "id": "6602468a-a3a8-4c2c-9d3a-fd54e2c5daf7",
+    "id": 47,
     "category": "smoothies",
     "name": "Mango Smoothie",
     "price": "Ksh.200",
@@ -565,7 +565,7 @@
     "quantity": 1
   },
   {
-    "id": "5db3ee2f-2eb7-4764-942d-894f72198e86",
+    "id": 48,
     "category": "smoothies",
     "name": "Banana Smoothie",
     "price": "Ksh.200",
@@ -577,7 +577,7 @@
     "quantity": 1
   },
   {
-    "id": "9b169efb-0966-40f3-b9c2-79b16cb96388",
+    "id": 49,
     "category": "smoothies",
     "name": "Green Smoothie",
     "price": "Ksh.280",
@@ -589,7 +589,7 @@
     "quantity": 1
   },
   {
-    "id": "fb1f9913-d903-498c-9e4a-16d363aa2eba",
+    "id": 50,
     "category": "smoothies",
     "name": "Banana Almond Smoothie",
     "price": "Ksh.350",
@@ -601,7 +601,7 @@
     "quantity": 1
   },
   {
-    "id": "fe48e340-4dc9-44b3-911b-9308b4f530b3",
+    "id": 51,
     "category": "smoothies",
     "name": "Papaya Smoothie",
     "price": "Ksh.250",
@@ -613,7 +613,7 @@
     "quantity": 1
   },
   {
-    "id": "d1116075-10f2-49c4-985e-0d41e19ce1b3",
+    "id": 52,
     "category": "smoothies",
     "name": "Strawberry Smoothie",
     "price": "Ksh.260",
@@ -625,7 +625,7 @@
     "quantity": 1
   },
   {
-    "id": "d1116075-10f2-49c4-985e-fg41e19dc1b8",
+    "id": 53,
     "category": "smoothies",
     "name": "Kiwi Smoothie",
     "price": "Ksh.400",
