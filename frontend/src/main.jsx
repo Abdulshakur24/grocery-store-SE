@@ -38,7 +38,7 @@ import PublicRoutes from "./layout/PublicRoute.jsx";
 import CartPage from "./components/CartPage.jsx";
 import About from "./pages/about/About.jsx";
 import Checkout from "./pages/checkout/Checkout.jsx";
-
+import PrivateRoutes from "./layout/PrivateRoute.jsx";
 
 const persistor = persistStore(store);
 
@@ -58,10 +58,16 @@ const router = createBrowserRouter([
       { path: "/bread", element: <Bread /> },
       { path: "/cheese", element: <Cheese /> },
       { path: "/smoothies", element: <Smoothies /> },
-      { path: "/cart-page", element: <CartPage/> },
-      { path: "/about", element: <About/> },
-      { path: "/checkout", element: <Checkout/> },
-
+      { path: "/cart-page", element: <CartPage /> },
+      { path: "/about", element: <About /> },
+      {
+        path: "/checkout",
+        element: (
+          <PrivateRoutes>
+            <Checkout />
+          </PrivateRoutes>
+        ),
+      },
 
       {
         path: "/login",
