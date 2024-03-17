@@ -5,11 +5,14 @@ export const ModalContext = createContext({
   toggleModal: () => {},
   children: null,
   setChildren: () => {},
+  position: false,
+  setPosition: () => {},
 });
 
 export const ModalProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [modalChildren, setModalChildren] = useState(null);
+  const [position, setPosition] = useState(false);
 
   const toggleModal = (value) => {
     const newState = value !== undefined ? value : !isOpen;
@@ -28,6 +31,8 @@ export const ModalProvider = ({ children }) => {
         toggleModal,
         children: modalChildren,
         setChildren: setModalChildren,
+        position,
+        setPosition,
       }}
     >
       {children}
