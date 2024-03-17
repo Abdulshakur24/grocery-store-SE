@@ -37,6 +37,7 @@ import LoginPage from "./pages/login/LoginPage.jsx";
 import PublicRoutes from "./layout/PublicRoute.jsx";
 import CartPage from "./components/CartPage.jsx";
 import About from "./pages/about/About.jsx";
+import Contact from "./pages/contact/Contact.jsx";
 import Checkout from "./pages/checkout/Checkout.jsx";
 import PrivateRoutes from "./layout/PrivateRoute.jsx";
 
@@ -60,6 +61,7 @@ const router = createBrowserRouter([
       { path: "/smoothies", element: <Smoothies /> },
       { path: "/cart-page", element: <CartPage /> },
       { path: "/about", element: <About /> },
+      { path: "/contact", element: <Contact /> },
       {
         path: "/checkout",
         element: (
