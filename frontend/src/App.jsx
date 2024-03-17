@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { useDispatch, useSelector } from "react-redux";
@@ -8,6 +8,7 @@ import { loadUser } from "./redux/slicers/userSlice";
 import { clearToken } from "./redux/slicers/tokenSlice";
 import toast from "react-hot-toast";
 import { connectToSocket } from "./utils/socket-io";
+import ScrollToTop from "./components/ScrollToTop";
 
 const socket = connectToSocket();
 
@@ -46,6 +47,7 @@ function App() {
   return (
     <>
       <NavBar />
+      <ScrollToTop />
       <div className="min-vh-100">
         <Outlet />
       </div>
