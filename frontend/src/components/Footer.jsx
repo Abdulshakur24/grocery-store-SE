@@ -18,22 +18,22 @@ function Footer() {
             <h6>Categories</h6>
             <ul className="footer-links ">
               <li>
-                <a href="#">Fruits</a>
+                <a href="fruits">Fruits</a>
               </li>
               <li>
-                <a href="#">Vegetables</a>
+                <a href="vegetables">Vegetables</a>
               </li>
               <li>
-                <a href="#">Juices</a>
+                <a href="juices">Juices</a>
               </li>
               <li>
-                <a href="#">Smoothies</a>
+                <a href="smoothies">Smoothies</a>
               </li>
               <li>
-                <a href="#">Bread</a>
+                <a href="bread">Bread</a>
               </li>
               <li>
-                <a href="#">Cheese</a>
+                <a href="cheese">Cheese</a>
               </li>
             </ul>
           </div>
@@ -41,19 +41,16 @@ function Footer() {
             <h6>Quick Links</h6>
             <ul className="footer-links">
               <li>
-                <a href="#">About Us</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <a href="blog">Blog</a>
               </li>
               <li>
-                <a href="#">Contribute</a>
+                <a href="about">About Us</a>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#">Sitemap</a>
+                <a href="contact">Contact Us</a>
               </li>
             </ul>
           </div>
