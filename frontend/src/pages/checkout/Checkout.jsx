@@ -17,7 +17,7 @@ const Checkout = () => {
 
   const { cart } = useSelector((state) => state.cartState);
   const { user } = useSelector((state) => state.userState);
-  const { token } = useSelector((state) => state.userToken);
+  const { token } = useSelector((state) => state.tokenState);
 
   const dispatch = useDispatch();
   const navigator = useNavigate();

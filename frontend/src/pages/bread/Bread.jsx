@@ -3,7 +3,7 @@ import PageHeader from "../../components/PageHeader";
 
 const showResults = "Showing 01 - 12 of 30 Results";
 import Data from "../../products.json";
-import ProductCards from "./ProductCards";
+import ProductCard from "../../components/ProductCard";
 import { Search } from "./Search";
 import Pagination from "../../components/Pagination";
 
@@ -56,9 +56,10 @@ const Bread = () => {
                 </div>
                 {/* Product Cards */}
                 <div>
-                  <ProductCards
+                  <ProductCard
                     gridList={gridList}
-                    fruitsProducts={currentProducts}
+                    slug="bread"
+                    products={currentProducts}
                   />
                 </div>
                 <Pagination
