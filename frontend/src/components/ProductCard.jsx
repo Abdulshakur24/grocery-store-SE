@@ -22,12 +22,11 @@ const ProductCard = ({ gridList, slug, products }) => {
               {/* produuct  action links */}
               <div className="product-action-link">
                 <Link to={`/${slug}/${product.id}`}>
-                  {" "}
                   <i className="icofont-eye"></i>
                 </Link>
-                <a href="#">
+                {/* <a href="#">
                   <i className="icofont-heart"></i>
-                </a>
+                </a> */}
                 <Link
                   onClick={() => {
                     console.log(product);
