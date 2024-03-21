@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { addItem } from "../../redux/slicers/cartSlice";
 
 const ProductDisplay = ({ item }) => {
-  const { name, id, price, ratingsCount, quantity, desc, img } = item;
+  const { name, id, price, ratingsCount, quantity, amount, desc, img } = item;
   const [prequantity, setQuantity] = useState(quantity);
   const [coupon, setCoupon] = useState("");
   const dispatch = useDispatch();
@@ -25,6 +25,7 @@ const ProductDisplay = ({ item }) => {
         img: img,
         name: name,
         price: price,
+        amount: amount,
         quantity: prequantity,
         coupon: coupon,
       })
@@ -44,6 +45,7 @@ const ProductDisplay = ({ item }) => {
           <span>{ratingsCount} reviews</span>
         </p>
         <h4>{price}</h4>
+        <p>{amount}</p>
         <p>{desc}</p>
       </div>
       <div>
