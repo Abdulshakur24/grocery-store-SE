@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 8070;
 
 app
   // Easier to allow all origins
-  // .use(cors({}))
+  .use(cors())
   // If needed, add front-end's URL as origin
   // .use(
   //   cors({
