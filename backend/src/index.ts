@@ -11,7 +11,7 @@ const app = express();
 
 const server = http.createServer(app);
 
-const PORT = process.env.API_PORT || 8070;
+const PORT = process.env.PORT || 8070;
 
 app
   // Easier to allow all origins
