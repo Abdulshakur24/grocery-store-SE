@@ -15,20 +15,18 @@ const PORT = process.env.PORT || 8070;
 
 
 app
-  .use(cors())
-    // Easier to allow all origins
-  // If needed, add front-end's URL as origin
-  // .use(
-  //   cors({
-  //     origin: [
-  //       "http://localhost:5173",
-  //       "http://localhost:5174",
-  //       "http://192.168.100.7:5173",
-  //       "http://localhost:8080",
-  //     ],
-  //     credentials: true,
-  //   })
-  // )
+  .use(
+    cors({
+      origin: [
+        "http://localhost:5173",
+        "http://localhost:5174",
+        "http://192.168.100.7:5173",
+        "http://localhost:8080",
+        "https://grocery-store-se.netlify.app/"
+      ],
+      credentials: true,
+    })
+  )
   .use(express.json())
   .use(express.urlencoded({ extended: true }))
   .use(morgan("dev"))
