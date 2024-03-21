@@ -22,7 +22,7 @@ app
         "http://localhost:5174",
         "http://192.168.100.7:5173",
         "http://localhost:8080",
-        "https://grocery-store-se.netlify.app/"
+        "https://grocery-store-se.netlify.app"
       ],
       credentials: true,
     })
