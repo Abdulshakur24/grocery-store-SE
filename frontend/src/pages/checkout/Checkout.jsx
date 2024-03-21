@@ -140,7 +140,7 @@ const Checkout = () => {
                 }`}
                 id="grid-lastName"
                 type="tel"
-                placeholder="Joe"
+                placeholder="Doe"
                 name="lastName"
                 value={formik.values.lastName}
                 onChange={formik.handleChange}
