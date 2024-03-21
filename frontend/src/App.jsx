@@ -13,7 +13,7 @@ import ScrollToTop from "./components/ScrollToTop";
 const socket = connectToSocket();
 
 function App() {
-  const { token } = useSelector((state) => state.userToken);
+  const { token } = useSelector((state) => state.tokenState);
   const [toastOnce, setToastOnce] = useState(true);
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();

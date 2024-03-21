@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import userState from "./slicers/userSlice";
-import userToken from "./slicers/tokenSlice";
+import tokenState from "./slicers/tokenSlice";
 import cartState from "./slicers/cartSlice";
 
 import {
@@ -16,7 +16,7 @@ import storage from "reduxjs-toolkit-persist/lib/storage";
 
 const rootReducer = combineReducers({
   userState,
-  userToken,
+  tokenState,
   cartState,
 });
 

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 const showResults = "Showing 01 - 12 of 30 Results";
 import Data from "../../products.json";
-import ProductCards from "./ProductCards";
 import PageHeader from "../../components/PageHeader";
 import Pagination from "../../components/Pagination";
 import { Search } from "./Search";
+import ProductCard from "../../components/ProductCard";
 
 const Vegetables = () => {
   const [gridList, setGridList] = useState(true);
@@ -57,9 +57,10 @@ const Vegetables = () => {
                 </div>
                 {/* Product Cards */}
                 <div>
-                  <ProductCards
+                  <ProductCard
                     gridList={gridList}
-                    fruitsProducts={fruitsProducts}
+                    slug="vegetables"
+                    products={fruitsProducts}
                   />
                 </div>
                 <Pagination

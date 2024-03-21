@@ -3,13 +3,15 @@ import PageHeader from "../../components/PageHeader";
 
 const showResults = "Showing 01 - 12 of 30 Results";
 import Data from "../../products.json";
-import ProductCards from "./ProductCards";
 import { Search } from "./Search";
 import Pagination from "../../components/Pagination";
+import ProductCard from "../../components/ProductCard";
 
 const Bread = () => {
   const [gridList, setGridList] = useState(true);
-  const fruitsProducts = Data.filter((product) => product.category === "smoothies");
+  const fruitsProducts = Data.filter(
+    (product) => product.category === "smoothies"
+  );
 
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
@@ -56,9 +58,10 @@ const Bread = () => {
                 </div>
                 {/* Product Cards */}
                 <div>
-                  <ProductCards
+                  <ProductCard
                     gridList={gridList}
-                    fruitsProducts={currentProducts}
+                    slug="smoothies"
+                    products={currentProducts}
                   />
                 </div>
                 <Pagination

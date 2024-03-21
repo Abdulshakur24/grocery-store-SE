@@ -11,7 +11,7 @@ import { connectToSocket } from "../../utils/socket-io";
 
 function LoginPage() {
   const [isSignUpMode, setIsSignUpMode] = useState(false);
-  const { token } = useSelector((state) => state.userToken);
+  const { token } = useSelector((state) => state.tokenState);
   const [toastOnce, setToastOnce] = useState(true);
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();

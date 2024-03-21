@@ -3,9 +3,9 @@ import PageHeader from "../../components/PageHeader";
 
 const showResults = "Showing 01 - 12 of 30 Results";
 import Data from "../../products.json";
-import ProductCards from "./ProductCards";
 import { Search } from "./Search";
 import Pagination from "../../components/Pagination";
+import ProductCard from "../../components/ProductCard";
 
 const Juices = () => {
   const [gridList, setGridList] = useState(true);
@@ -58,9 +58,10 @@ const Juices = () => {
                 </div>
                 {/* Product Cards */}
                 <div>
-                  <ProductCards
+                  <ProductCard
                     gridList={gridList}
-                    fruitsProducts={fruitsProducts}
+                    slug="juices"
+                    products={fruitsProducts}
                   />
                 </div>
                 <Pagination
