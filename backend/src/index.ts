@@ -11,21 +11,23 @@ const app = express();
 
 const server = http.createServer(app);
 
-const PORT = 8070;
-const HOST = "localhost";
+const PORT = process.env.API_PORT || 8070;
 
 app
-  .use(
-    cors({
-      origin: [
-        "http://localhost:5173",
-        "http://localhost:5174",
-        "http://192.168.100.7:5173",
-        "http://localhost:8080",
-      ],
-      credentials: true,
-    })
-  )
+  // Easier to allow all origins
+  .use(cors({}))
+  // If needed, add front-end's URL as origin
+  // .use(
+  //   cors({
+  //     origin: [
+  //       "http://localhost:5173",
+  //       "http://localhost:5174",
+  //       "http://192.168.100.7:5173",
+  //       "http://localhost:8080",
+  //     ],
+  //     credentials: true,
+  //   })
+  // )
   .use(express.json())
   .use(express.urlencoded({ extended: true }))
   .use(morgan("dev"))
@@ -36,7 +38,7 @@ app
   )
   .use(apiRouters);
 
-server.listen(PORT, HOST, () => {
-  console.log(`Server running at http://${HOST}:${PORT}/`);
+server.listen(PORT, () => {
+  console.log(`Server running on port: ${PORT}`);
   initIO(server);
 });
