@@ -34,5 +34,5 @@ export default defineConfig({
     },
   },
   // base setting is important if your app is not served from the server root
-  base: process.env.NODE_ENV === "production" ? "/frontend/dist" : "/",
+  base: process.env.NODE_ENV === "production" ? "/dist" : "/",
 });
